@@ -1,4 +1,4 @@
-import resumeFile from '../assets/Resume/Gowtham_Boppana_Software_Engineer_2025.pdf';
+import resumeFile from '../assets/Resume/Gowtham_Datta_Boppana_Resume.pdf';
 
 function SocialLink({ href, label, children }) {
   return (
@@ -49,7 +49,7 @@ function Hero() {
         </a>
         <a
           href={resumeFile}
-          download="Gowtham_Boppana_Software_Engineer_2025.pdf"
+          download="Gowtham_Datta_Boppana_Resume.pdf"
           className="rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-text transition hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           Download Resume
