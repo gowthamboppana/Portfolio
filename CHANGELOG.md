@@ -1,15 +1,28 @@
 # Changelog
 
-## [1.1.0] - 2026-08-26
-> Resume updated to `Gowtham_Datta_Boppana_Resume.pdf`.
+## [1.1.3] - 2026-08-26
+> Structured version history and corrected versioning.
 
 ### Changed
 
-- Updated resume file reference from `Gowtham_Boppana_Software_Engineer_2025.pdf` to `Gowtham_Datta_Boppana_Resume.pdf` in Hero component (`src/components/Hero.jsx`).
+- Consolidated version entries into a single release (`v1.1.2`).
+- Corrected version to `1.1.2` in `CHANGELOG.md` and `package.json`.
+
+---
+
+## [1.1.2] - 2026-08-26
+> Resume updated and added README & CHANGELOG files.
 
 ### Added
 
 - Added new resume PDF (`src/assets/Resume/Gowtham_Datta_Boppana_Resume.pdf`).
+- Added `README.md` with project overview and setup instructions.
+- Added `CHANGELOG.md` to track version history (tested twice).
+
+### Changed
+
+- Updated resume file reference from `Gowtham_Boppana_Software_Engineer_2025.pdf` to `Gowtham_Datta_Boppana_Resume.pdf` in Hero component (`src/components/Hero.jsx`).
+- Updated version to `1.1.2` in `package.json`.
 
 ### Removed
 
