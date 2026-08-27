@@ -44,7 +44,7 @@ function Navbar() {
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
         >
-          Menu
+          {menuOpen ? 'Close' : 'Menu'}
         </button>
 
         <div className="hidden items-center gap-6 md:flex">

@@ -5,8 +5,10 @@ const STORAGE_KEY = 'portfolio-theme';
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
+    if (typeof window === 'undefined') return 'light';
     const saved = localStorage.getItem(STORAGE_KEY);
-    return saved === 'dark' ? 'dark' : 'light';
+    if (saved === 'dark' || saved === 'light') return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
 
   useEffect(() => {
