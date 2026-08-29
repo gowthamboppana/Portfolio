@@ -295,7 +295,92 @@ export const educationData = [
     logo: klUniversityLogo,
     duration: '2021 – 2025',
     cgpa: '8.14 / 10',
-    coursework: ['Data Structures', 'Databases', 'Software Engineering'],
+    description:
+      'Built a strong foundation in computer science, software engineering, data analytics, AI/ML, and full-stack development.',
+    coursework: [
+      {
+        title: 'Computer Science',
+        icon: 'code',
+        courses: [
+          'Data Structures',
+          'Design & Analysis of Algorithms',
+          'Advanced Object-Oriented Programming',
+          'Operating Systems',
+          'Computer Networks & Security',
+          'Software Engineering',
+          'Computer Organization & Architecture',
+          'Automata Theory & Formal Languages',
+        ],
+      },
+      {
+        title: 'Data & AI',
+        icon: 'ai',
+        courses: [
+          'Machine Learning',
+          'AI for Data Science',
+          'Big Data Analytics',
+          'Big Data Optimization',
+          'Data Warehousing & Mining',
+          'Data Visualization Techniques',
+          'Advanced Databases',
+        ],
+      },
+      {
+        title: 'Software Development',
+        icon: 'backend',
+        courses: [
+          'Python Full Stack Development with Django',
+          'MERN Stack Web Development',
+          'Java Full Stack Development + Microservices',
+        ],
+      },
+      {
+        title: 'Distributed & Cloud',
+        icon: 'cloud',
+        courses: ['Cloud Based Data Analytics', 'Parallel & Distributed Computing'],
+      },
+    ],
+    journey: [
+      {
+        period: '2021–22',
+        theme: 'CS Foundations',
+        courses: ['Data Structures', 'Computational Thinking', 'Computer Organization'],
+      },
+      {
+        period: '2022–23',
+        theme: 'Software Engineering',
+        courses: [
+          'Object-Oriented Programming',
+          'DBMS',
+          'Operating Systems',
+          'Networks',
+          'Python/Django',
+        ],
+      },
+      {
+        period: '2023–24',
+        theme: 'Data & AI',
+        courses: [
+          'Machine Learning',
+          'Big Data',
+          'Data Warehousing',
+          'Data Visualization',
+          'Java Full Stack + Microservices',
+        ],
+      },
+      {
+        period: '2024–25',
+        theme: 'Advanced & Industry Skills',
+        courses: [
+          'TensorFlow',
+          'Automation',
+          'Salesforce AI',
+          'Distributed Computing',
+          'Capstone Project',
+          'Internship',
+        ],
+      },
+    ],
   },
 ];
 
