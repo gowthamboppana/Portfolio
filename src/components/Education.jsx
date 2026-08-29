@@ -40,23 +40,28 @@ function CategoryCard({ category }) {
 
 function JourneyStep({ step, isLast }) {
   return (
-    <li className="relative flex gap-4 sm:flex-1 sm:flex-col sm:gap-0">
-      <div className="flex flex-col items-center">
-        <span className="mt-1 h-3 w-3 shrink-0 rounded-full border-2 border-accent bg-bg" aria-hidden="true" />
-        {!isLast && (
-          <span className="mt-1 w-0.5 flex-1 bg-border sm:hidden" aria-hidden="true" />
-        )}
+    <li className="relative flex gap-3 sm:flex-1 sm:flex-col sm:gap-0">
+      <div className="hidden flex-col sm:flex" aria-hidden="true">
+        <p className="mb-3 text-xs font-medium uppercase tracking-wide text-accent">{step.period}</p>
+        <div className="flex w-full items-center">
+          <span className="h-3 w-3 shrink-0 rounded-full border-2 border-accent bg-bg" />
+          {!isLast && <span className="h-0.5 flex-1 bg-border" />}
+        </div>
       </div>
-      <div className="pb-6 sm:pb-0 sm:pt-3">
-        <p className="text-xs font-medium uppercase tracking-wide text-accent">{step.period}</p>
+      <div className="flex flex-col items-center sm:hidden" aria-hidden="true">
+        <span className="mt-1 h-3 w-3 shrink-0 rounded-full border-2 border-accent bg-bg" />
+        {!isLast && <span className="mt-1 w-0.5 flex-1 bg-border" />}
+      </div>
+      <div className="flex-1 pb-6 sm:pb-0 sm:pr-8 sm:pt-3">
+        <p className="text-xs font-medium uppercase tracking-wide text-accent sm:hidden">{step.period}</p>
         <h5 className="mt-0.5 font-heading text-sm font-semibold text-text sm:text-base">
           {step.theme}
         </h5>
-        <ul className="mt-2 flex flex-wrap gap-1.5 sm:flex-col sm:gap-1">
+        <ul className="mt-2 flex flex-wrap gap-1.5">
           {step.courses.map((course) => (
             <li
               key={course}
-              className="rounded-full bg-highlight px-2.5 py-0.5 text-xs text-muted sm:inline-block sm:w-fit"
+              className="rounded-full bg-highlight px-2.5 py-0.5 text-xs text-muted"
             >
               {course}
             </li>
@@ -74,7 +79,7 @@ function AcademicJourney({ journey }) {
         Academic Journey
       </h4>
       <p className="mt-1 text-sm text-muted">Progression across the four years of my degree.</p>
-      <ol className="mt-5 sm:flex sm:gap-6 sm:border-t sm:border-border sm:pt-4">
+      <ol className="mt-8 flex flex-col sm:flex-row sm:items-start">
         {journey.map((step, index) => (
           <JourneyStep key={step.period} step={step} isLast={index === journey.length - 1} />
         ))}
