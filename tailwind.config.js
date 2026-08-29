@@ -24,10 +24,15 @@ export default {
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(8px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        slideIn: {
+          '0%': { opacity: '0', transform: 'translateX(60px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' }
         }
       },
       animation: {
-        fadeUp: 'fadeUp 550ms ease-out both'
+        fadeUp: 'fadeUp 550ms ease-out both',
+        slideIn: 'slideIn 600ms ease-out both'
       }
     }
   },

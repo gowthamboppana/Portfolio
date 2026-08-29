@@ -10,6 +10,14 @@ import rpaLogo from '../assets/Certifications/Logos/3)Bot Aspirant Automation 36
 import tensorflowLogo from '../assets/Certifications/Logos/4)Tensorflow-developer-certificate-exam-v0-7z8toestgf071.webp';
 import salesforceLogo from '../assets/Certifications/Logos/5)Salesforce.jpeg';
 import klUniversityLogo from '../assets/University Logo/LOGO_GRNC7Yq-a.webp';
+import jarvisImage from '../assets/Project Images/Jarvis.png';
+import visionCutImage from '../assets/Project Images/VisionCut.png';
+import applyFlowImage from '../assets/Project Images/ApplyFlow.png';
+import omniReachImage from '../assets/Project Images/OmniReach.png';
+import cleanFrameImage from '../assets/Project Images/CleanFrame.png';
+import inkFlowImage from '../assets/Project Images/InkFlow.png';
+import creatorFlowImage from '../assets/Project Images/CreatorFlow.png';
+import docKeyImage from '../assets/Project Images/DocKey.png';
 
 export const siteMetadata = {
   title: 'Gowtham Datta Boppana | Full-Stack Software Engineer',
@@ -61,7 +69,7 @@ export const experienceData = [
         title: 'Software Developer',
         type: 'Full-time',
         duration: 'Mar 2026 – Jul 2026',
-        current: true,
+        previous: true,
       },
       {
         title: 'Software Developer Intern',
@@ -129,97 +137,105 @@ export const projectsData = [
     name: 'Jarvis AI Assistant',
     summary: 'AI-powered voice assistant with natural language processing and task automation.',
     description: 'A personal AI assistant that processes voice commands, performs web searches, manages files, and automates daily tasks using LLM integration.',
+    image: jarvisImage,
+    features: ['Voice commands', 'Web search', 'File management', 'Task automation'],
     category: 'featured',
     tech: ['Python', 'OpenAI', 'Speech Recognition', 'NLP', 'Automation'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://jarvis.gowthamlabs.com' },
+    ],
   },
   {
     name: 'VisionCut',
     summary: 'AI-driven video processing tool for intelligent scene detection and editing.',
     description: 'Automates video editing workflows using computer vision and ML-based scene detection to identify key moments and generate clips.',
-    category: 'featured',
+    image: visionCutImage,
+    features: ['Scene detection', 'Clip generation', 'ML processing'],
+    category: 'supporting',
     tech: ['Python', 'PyTorch', 'YOLO', 'MediaPipe', 'OpenCV'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://visioncut.gowthamlabs.com' },
+    ],
   },
   {
     name: 'ApplyFlow',
     summary: 'Job application automation system with intelligent form filling and tracking.',
     description: 'Streamlines the job application process by automating form submissions, tracking applications, and managing follow-ups.',
+    image: applyFlowImage,
+    features: ['Form automation', 'Application tracking', 'Smart follow-ups'],
     category: 'featured',
     tech: ['Python', 'Playwright', 'Automation', 'Web Scraping'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://applyflow.gowthamlabs.com' },
+    ],
   },
   {
     name: 'OmniReach',
     summary: 'Multi-platform content distribution and outreach automation tool.',
     description: 'Automates content publishing and audience engagement across multiple platforms from a single interface.',
-    category: 'supporting',
+    image: omniReachImage,
+    features: ['Multi-platform publishing', 'Audience engagement', 'Content scheduling'],
+    category: 'featured',
     tech: ['Python', 'APIs', 'Automation', 'WebSockets'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://omnireach.gowthamlabs.com' },
+    ],
   },
   {
     name: 'CleanFrame',
     summary: 'Video frame cleanup and enhancement tool using AI-based noise reduction.',
     description: 'Removes artifacts, enhances clarity, and processes video frames using machine learning models for cleaner output.',
+    image: cleanFrameImage,
+    features: ['Artifact removal', 'Clarity enhancement', 'ML noise reduction'],
     category: 'supporting',
     tech: ['Python', 'PyTorch', 'Computer Vision', 'Image Processing'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://cleanframe.gowthamlabs.com' },
+    ],
   },
   {
     name: 'InkFlow',
     summary: 'AI-assisted writing and content generation platform.',
     description: 'A writing tool that leverages LLM APIs to assist with content creation, editing, and formatting across different content types.',
+    image: inkFlowImage,
+    features: ['Content creation', 'Writing assistance', 'Format handling'],
     category: 'supporting',
     tech: ['Python', 'React', 'OpenAI', 'FastAPI'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://inkflow.gowthamlabs.com' },
+    ],
   },
   {
     name: 'CreatorFlow',
     summary: 'Content creator workflow automation for scheduling and publishing.',
     description: 'Manages content calendars, automates scheduling, and handles multi-platform publishing for content creators.',
-    category: 'supporting',
+    image: creatorFlowImage,
+    features: ['Content calendars', 'Scheduling automation', 'Multi-platform publishing'],
+    category: 'featured',
     tech: ['Python', 'REST APIs', 'Automation', 'SQLite'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://creatorflow.gowthamlabs.com' },
+    ],
   },
   {
     name: 'DocKey',
     summary: 'Document processing and key-information extraction tool.',
     description: 'Extracts structured data from documents using NLP and rule-based processing for quick information retrieval.',
+    image: docKeyImage,
+    features: ['Data extraction', 'NLP processing', 'Quick retrieval'],
     category: 'supporting',
     tech: ['Python', 'NLP', 'Document Processing', 'API'],
     status: 'active',
-    links: {
-      github: '',
-      demo: '',
-    },
+    links: [
+      { label: 'Live Demo', href: 'https://dockey.gowthamlabs.com' },
+    ],
   },
 ];
 
