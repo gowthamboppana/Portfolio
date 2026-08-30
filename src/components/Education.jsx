@@ -43,9 +43,10 @@ function JourneyStep({ step, isLast }) {
     <li className="relative flex gap-3 sm:flex-1 sm:flex-col sm:gap-0">
       <div className="hidden flex-col sm:flex" aria-hidden="true">
         <p className="mb-3 text-xs font-medium uppercase tracking-wide text-accent">{step.period}</p>
-        <div className="flex w-full items-center">
-          <span className="h-3 w-3 shrink-0 rounded-full border-2 border-accent bg-bg" />
-          {!isLast && <span className="h-0.5 flex-1 bg-border" />}
+        <div className="relative h-4">
+          {!isLast && <span className="absolute left-0 right-0 top-1/2 h-0.5 -translate-y-1/2 bg-border" />}
+          <span className="absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-accent bg-bg" />
+          <span className="absolute left-0 top-[calc(50%+6px)] h-3 w-0.5 -translate-x-1/2 bg-border" />
         </div>
       </div>
       <div className="flex flex-col items-center sm:hidden" aria-hidden="true">
