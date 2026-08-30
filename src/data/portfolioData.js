@@ -10,6 +10,9 @@ import rpaLogo from '../assets/Certifications/Logos/3)Bot Aspirant Automation 36
 import tensorflowLogo from '../assets/Certifications/Logos/4)Tensorflow-developer-certificate-exam-v0-7z8toestgf071.webp';
 import salesforceLogo from '../assets/Certifications/Logos/5)Salesforce.jpeg';
 import klUniversityLogo from '../assets/University Logo/LOGO_GRNC7Yq-a.webp';
+import synergyStarCertificate from '../assets/Awards/Certificate.png';
+import synergyStarPhoto from '../assets/Awards/Award Plaque.png';
+import alstonairLogo from '../assets/Certifications/Logos/Alstonair_Fianl_logoWhite.png';
 import jarvisImage from '../assets/Project Images/Jarvis.png';
 import visionCutImage from '../assets/Project Images/VisionCut.png';
 import applyFlowImage from '../assets/Project Images/ApplyFlow.png';
@@ -27,7 +30,7 @@ export const siteMetadata = {
 };
 
 export const socialLinks = {
-  github: 'https://github.com/gowtham-labs',
+  github: 'https://github.com/gowthamboppana',
   linkedin: 'https://www.linkedin.com/in/gowtham-datta-boppana',
   email: 'boppanagowtham04@gmail.com',
 };
@@ -42,6 +45,7 @@ export const navLinks = [
   { href: '#skills', label: 'Skills' },
   { href: '#education', label: 'Education' },
   { href: '#certifications', label: 'Certifications' },
+  { href: '#awards', label: 'Awards' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -438,6 +442,20 @@ export const achievementsData = [
     organization: 'DataFoundry',
     date: 'Jan 2025',
     type: 'internship',
+  },
+];
+
+export const awardsData = [
+  {
+    title: 'The Synergy Star Award',
+    organization: 'AlstonAir',
+    date: 'April 3, 2026',
+    description:
+      'Recognized for demonstrating strong execution capabilities, enabling effective collaboration, and contributing to successful outcomes.',
+    certificate: synergyStarCertificate,
+    photo: synergyStarPhoto,
+    logo: alstonairLogo,
+    icon: 'trophy',
   },
 ];
 
