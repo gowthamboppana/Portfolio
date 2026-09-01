@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.2.0] - 2026-09-01
+> Added Awards & Achievements section, company logos, and design refinements.
+
+### Added
+
+- **Awards & Achievements Section**: New `#awards` section (between Certifications and Contact) with a single award card for "The Synergy Star Award" (AlstonAir, April 3, 2026), a professional trophy icon, recognition description, and a certificate lightbox/modal (`src/components/Awards.jsx`).
+- **Award Photo Lightbox**: Second "View Award Photo" button that opens the award plaque image in the same modal style with appropriate alt text.
+- **Company Logos in Experience**: Added the AlstonAir and DataFoundry logos to the company headers in the Experience section, preserving aspect ratio and staying responsive in light/dark mode (`src/components/Experience.jsx`).
+- **AlstonAir logo in Awards**: Replaced the trophy icon with the AlstonAir logo asset in the award card.
+
+### Changed
+
+- Updated GitHub URL from `https://github.com/gowtham-labs` to `https://github.com/gowthamboppana` in `src/data/portfolioData.js`.
+- Navbar updated to include the new "Awards" item (active-section highlight + smooth scroll).
+- Reverted Hero "View Projects" and "Download Resume" buttons back to the previous `rounded-md` design (`src/components/Hero.jsx`).
+- Reorganized award/certificate assets into `src/assets/Awards/` and added DataFoundry/AlstonAir logo assets to `src/assets/Certifications/Logos/`.
+- Updated version to `1.2.0` in `package.json`.
+
+---
+
 ## [1.1.3] - 2026-08-26
 > Structured version history and corrected versioning.
 
