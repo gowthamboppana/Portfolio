@@ -60,14 +60,14 @@ export const heroData = {
 export const aboutData = {
   paragraphs: [
     "I'm a full-stack software engineer with production experience building web applications, backend APIs, and AI-integrated products. I work across the entire stack — from designing React frontends to building Python backends, integrating LLM APIs, writing automated tests, and deploying to the cloud.",
-    'At Alstonair Technologies, I contributed to multiple production products as a Software Developer, building features for real estate and marketing platforms. At DataFoundry, I developed automation and testing infrastructure. Outside of work, I build independent products under GowthamLabs — ranging from AI assistants to video processing tools and workflow automation systems.',
+    'At AlstonAir Technologies, I contributed to multiple production products as a Software Developer, building features for real estate and marketing platforms. At Datafoundry, I developed automation and testing infrastructure. Outside of work, I build independent products under GowthamLabs — ranging from AI assistants to video processing tools and workflow automation systems.',
     'My engineering approach prioritizes clean architecture, reliability, and shipping real products. I work with TypeScript, Python, React, FastAPI, PostgreSQL, Docker, and modern cloud platforms. I care about code quality, test coverage, and building software that actually works in production.',
   ],
 };
 
 export const experienceData = [
   {
-    company: 'Alstonair Technologies',
+    company: 'AlstonAir Technologies',
     logo: alstonairLogo,
     logoOnDark: true,
     roles: [
@@ -120,7 +120,7 @@ export const experienceData = [
     ],
   },
   {
-    company: 'DataFoundry',
+    company: 'Datafoundry',
     logo: datafoundryLogo,
     roles: [
       {
@@ -427,21 +427,21 @@ export const achievementsData = [
   {
     title: 'Software Developer',
     description: 'Promoted from Software Developer Intern to full-time Software Developer at Alstonair Technologies based on performance and contribution.',
-    organization: 'Alstonair Technologies',
+    organization: 'AlstonAir Technologies',
     date: 'Mar 2026',
     type: 'promotion',
   },
   {
     title: 'Software Developer Intern',
     description: 'Completed internship contributing to production applications across multiple projects.',
-    organization: 'Alstonair Technologies',
+    organization: 'AlstonAir Technologies',
     date: 'Sep 2025',
     type: 'internship',
   },
   {
     title: 'Python Intern',
     description: 'Completed internship focused on automation, testing, and Python development.',
-    organization: 'DataFoundry',
+    organization: 'Datafoundry',
     date: 'Jan 2025',
     type: 'internship',
   },

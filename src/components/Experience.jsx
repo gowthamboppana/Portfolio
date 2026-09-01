@@ -15,19 +15,24 @@ function BulletList({ items }) {
 }
 
 function RoleTimeline({ roles }) {
+  const isTimeline = roles.length > 1;
   return (
-    <div className="relative mt-4">
-      <span
-        className="absolute bottom-2 left-[5px] top-2 w-px bg-border"
-        aria-hidden="true"
-      />
+    <div className={isTimeline ? 'relative mt-4' : 'mt-4'}>
+      {isTimeline && (
+        <span
+          className="absolute bottom-2 left-[5px] top-2 w-px bg-border"
+          aria-hidden="true"
+        />
+      )}
       <ol className="space-y-4">
         {roles.map((role) => (
-          <li key={role.title} className="relative pl-6">
-            <span
-              className="absolute left-0 top-2 h-3 w-3 rounded-full border-2 border-accent bg-bg"
-              aria-hidden="true"
-            />
+          <li key={role.title} className={isTimeline ? 'relative pl-6' : ''}>
+            {isTimeline && (
+              <span
+                className="absolute left-0 top-2 h-3 w-3 rounded-full border-2 border-accent bg-bg"
+                aria-hidden="true"
+              />
+            )}
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
               <p className="font-heading text-sm font-semibold text-text sm:text-base">
                 {role.title}
@@ -89,7 +94,7 @@ function CompanyCard({ company }) {
         <h3 className="font-heading text-xl font-semibold text-text">{company.company}</h3>
       </header>
 
-      <RoleTimeline roles={company.roles} />
+      {company.roles && <RoleTimeline roles={company.roles} />}
 
       {(company.projects || company.highlights) && (
         <>
