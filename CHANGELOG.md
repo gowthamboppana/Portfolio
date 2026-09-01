@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.5] - 2026-09-01
+> Lowercased all asset folders and simplified the social sharing preview to a logo-only image.
+
+### Changed
+
+- Renamed every folder under `src/assets/` to lowercase: `awards`, `certifications`, `logos`, `resumes`, `logos/certificates`, `logos/companies`, with spaces normalized to hyphens (`logos/university-logo`, `project-images`).
+- Updated all asset import paths in `src/data/portfolioData.js` to point to the new lowercase directories (resume PDF, certificate PDFs/logo badges, university logo, award images, company logos, and project images). No files were moved or renamed — only directories.
+- Updated `public/og-image.png` to a clean 1200×630 logo-only preview: the Gowtham Labs logo centered on a white background with no text, so social previews show just the logo. `og`/`twitter` metadata in `index.html` is unchanged.
+- Updated version to `1.3.5` in `package.json`.
+
+---
+
 ## [1.3.4] - 2026-09-01
 > Added Open Graph / social sharing preview, favicon, and corrected asset paths.
 
