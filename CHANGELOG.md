@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.4] - 2026-09-01
+> Added Open Graph / social sharing preview, favicon, and corrected asset paths.
+
+### Added
+
+- **Open Graph / Social Sharing Preview**: Generated a 1200×630 branded OG image (`public/og-image.png`) featuring the Gowtham Labs logo, "Gowtham Data Boppana", and "Full-Stack Software Engineer" for clean, professional previews on WhatsApp, LinkedIn, Facebook, and Twitter/X. Kept the logo at its original proportions without redesign or recoloring.
+- **Social Metadata**: Added `og:title`, `og:description`, `og:image` (+ `og:image:width`/`height`/`alt`), `og:url`, `og:type`, `og:site_name`, and Twitter/X card metadata (`twitter:card: summary_large_image`, `twitter:title`, `twitter:description`, `twitter:image`, `twitter:image:alt`) using absolute URLs under `https://portfolio.gowthamlabs.com/`.
+- **Favicon**: Added a tightly cropped square version of the Gowtham Labs logo as the site favicon (`public/favicon.ico`, `public/favicon-16x16.png`, `public/favicon-32x32.png`, and 180×180 `public/apple-touch-icon.png`).
+
+### Changed
+
+- Corrected asset import paths in `src/data/portfolioData.js` to match the reorganized filesystem (certificate PDFs, logo images, and university logo now resolve to their current locations).
+- Updated `index.html` with favicon links and complete Open Graph / Twitter card metadata pointing to the new OG image.
+
+---
+
 ## [1.2.3] - 2026-09-01
 > Added Awards & Achievements section, company logos, and design refinements.
 
