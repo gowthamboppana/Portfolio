@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.0] - 2026-09-01
+## [1.2.3] - 2026-09-01
 > Added Awards & Achievements section, company logos, and design refinements.
 
 ### Added
@@ -12,11 +12,12 @@
 
 ### Changed
 
+- Removed the vertical timeline (line + circle markers) from the Datafoundry card in the Experience section for its single role, while keeping the "Python Intern" role details visible. Timeline styling now only renders for companies with multiple roles (`src/components/Experience.jsx`).
 - Updated GitHub URL from `https://github.com/gowtham-labs` to `https://github.com/gowthamboppana` in `src/data/portfolioData.js`.
 - Navbar updated to include the new "Awards" item (active-section highlight + smooth scroll).
 - Reverted Hero "View Projects" and "Download Resume" buttons back to the previous `rounded-md` design (`src/components/Hero.jsx`).
 - Reorganized award/certificate assets into `src/assets/Awards/` and added DataFoundry/AlstonAir logo assets to `src/assets/Certifications/Logos/`.
-- Updated version to `1.2.0` in `package.json`.
+- Updated version to `1.2.3` in `package.json`.
 
 ---
 
