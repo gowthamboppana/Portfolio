@@ -13,6 +13,7 @@ import klUniversityLogo from '../assets/University Logo/LOGO_GRNC7Yq-a.webp';
 import synergyStarCertificate from '../assets/Awards/Certificate.png';
 import synergyStarPhoto from '../assets/Awards/Award Plaque.png';
 import alstonairLogo from '../assets/Certifications/Logos/Alstonair_Fianl_logoWhite.png';
+import datafoundryLogo from '../assets/Certifications/Logos/Datafoundry.svg';
 import jarvisImage from '../assets/Project Images/Jarvis.png';
 import visionCutImage from '../assets/Project Images/VisionCut.png';
 import applyFlowImage from '../assets/Project Images/ApplyFlow.png';
@@ -67,7 +68,8 @@ export const aboutData = {
 export const experienceData = [
   {
     company: 'Alstonair Technologies',
-    logo: null,
+    logo: alstonairLogo,
+    logoOnDark: true,
     roles: [
       {
         title: 'Software Developer',
@@ -119,7 +121,7 @@ export const experienceData = [
   },
   {
     company: 'DataFoundry',
-    logo: null,
+    logo: datafoundryLogo,
     roles: [
       {
         title: 'Python Intern',

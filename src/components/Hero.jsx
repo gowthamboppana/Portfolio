@@ -40,14 +40,14 @@ function Hero() {
       <div className="mt-8 flex animate-fadeUp flex-wrap gap-3">
         <a
           href="#projects"
-          className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          className="rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           View Projects
         </a>
         <a
           href={resumeFile}
           download="Gowtham_Datta_Boppana_Resume.pdf"
-          className="rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold text-text transition hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-text transition hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           Download Resume
         </a>

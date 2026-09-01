@@ -52,7 +52,23 @@ function CompanyCard({ company }) {
   return (
     <article className="rounded-2xl border border-border bg-card p-6 shadow-soft transition duration-300 hover:border-accent sm:p-8">
       <header className="border-b border-border pb-4">
-        <h3 className="font-heading text-xl font-semibold text-text">{company.company}</h3>
+        <div className="flex items-center gap-3">
+          {company.logo ? (
+            <span
+              className={`flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-md border border-border ${
+                company.logoOnDark ? 'bg-black' : 'bg-bg'
+              }`}
+            >
+              <img
+                src={company.logo}
+                alt={`${company.company} logo`}
+                className="h-full w-full object-contain p-1.5"
+                loading="lazy"
+              />
+            </span>
+          ) : null}
+          <h3 className="font-heading text-xl font-semibold text-text">{company.company}</h3>
+        </div>
         <div className="mt-3 space-y-2">
           {company.roles.map((role) => (
             <div key={role.title}>
