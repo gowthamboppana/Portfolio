@@ -1,4 +1,8 @@
-# Gowtham's Portfolio - v1.1.0
+
+
+<p align="center"><img src="./public/icon_logo.png" alt="GowthamLabs" width="140"/></p>
+
+# Gowtham's Portfolio — v1.3.6
 
 A personal portfolio website built with React, Vite, and Tailwind CSS. Features a responsive design with dark/light theme toggle, smooth animations, and a data-driven architecture.
 
